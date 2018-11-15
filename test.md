@@ -26,10 +26,10 @@ Math.round(11.5)等于12；Math.round(-11.5)等于-11
 ```
 值传递，Java中只有值传递，引用传递一般需要指针
 ```
-- String和StringBuilder、StringBuffer的区别？
-```
-String是字符串类型，被final修饰，不可继承，对象不可修改，修改内容时是先创建一个新的String对象，然后将引用指向新的对象，String重写了equals()方法；StringBiulder和StringBuffer其对象是可以被修改的，他们都没有重写equals()方法，StringBuffer是线程安全的。在有大量的字符串修改时StringBiulder和StringBuffer的效率要远高于String。
-```
+- String和StringBuilder、StringBuffer的区别？<br>
+
+`String是字符串类型，被final修饰，不可继承，对象不可修改，修改内容时是先创建一个新的String对象，然后将引用指向新的对象，String重写了equals()方法；StringBiulder和StringBuffer其对象是可以被修改的，他们都没有重写equals()方法，StringBuffer是线程安全的。在有大量的字符串修改时StringBiulder和StringBuffer的效率要远高于String。`<br>
+
 - char 型变量中能不能存贮一个中文汉字，为什么？
 ```
 可以，char存放的是一个Unicode，汉字有对应的Unicode，所以每个char可以存放一个汉字
